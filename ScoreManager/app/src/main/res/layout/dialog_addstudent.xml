@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:text="添加"/>
+
+    <EditText
+        android:id="@+id/et_add_stucode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="学号"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/et_add_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="姓名"/>
+    <EditText
+        android:id="@+id/et_add_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="班级"/>
+    <EditText
+        android:id="@+id/et_add_gradepoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="绩点"
+        android:inputType="numberDecimal"/>
+
+</LinearLayout>

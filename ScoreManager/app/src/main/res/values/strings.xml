@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">奖学金管家</string>
+    <string name="menu_all">全部</string>
+    <string name="menu_search">查询</string>
+    <string name="menu_order">排序</string>
+    <string name="menu_add">添加</string>
+    <string name="menu_about">关于</string>
+</resources>

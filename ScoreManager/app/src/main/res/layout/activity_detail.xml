@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#58a"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名："
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/et_detail_name"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:lines="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学号："
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/et_detail_code"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="班级："
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/et_detail_class"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:lines="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绩点："
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/et_detail_point"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动："
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/et_detail_activity"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总分："
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/et_detail_statis"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:text="参与的活动："
+        android:background="#9ab"/>
+    <ListView
+        android:id="@+id/lv_detail_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    </ListView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:text="添加活动"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="#9ab"
+        android:padding="5dp"
+        android:onClick="addActivity"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="返回"
+            android:textSize="18sp"
+            android:onClick="goBack"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="删除"
+            android:textSize="18sp"
+            android:onClick="deleteStudent"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="保存"
+            android:textSize="18sp"
+            android:onClick="saveStudent"/>
+    </LinearLayout>
+
+</LinearLayout>

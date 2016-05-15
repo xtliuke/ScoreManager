@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/iv_usericon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/user_icon_1"
+        android:background="#cef"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textColor="#2977AD"
+            android:textSize="22sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="#ccc"/>
+        <TextView
+            android:id="@+id/tv_userdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绩点-98  活动-8  统计得分-106"
+            android:textSize="12sp"
+            android:lines="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

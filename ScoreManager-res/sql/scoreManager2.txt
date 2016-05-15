@@ -1,0 +1,14 @@
+﻿1.标题
+
+2.学生姓名  学号  班级
+3.绩点（stu_baseinfo.grade_point）
+4.活动(stu_activity.activity_sum)
+  各项活动(stu_activity)
+5.总分statis_point)
+6.删除，修改
+
+
+
+姓名，学号，班级，绩点，活动，总分
+
+各项活动

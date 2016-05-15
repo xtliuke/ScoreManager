@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp">
+
+    <TextView
+        android:id="@+id/tv_detail_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="羽毛球协会：10分"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/tv_detail_activity_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_delete"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:onClick="deleteActivity"/>
+
+</RelativeLayout>

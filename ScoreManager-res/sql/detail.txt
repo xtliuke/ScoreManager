@@ -1,0 +1,38 @@
+﻿//查询非活动详情部分
+select 
+sb.stu_code,
+sb.stu_name,
+sb.class_name,
+sb.grade_point,
+sum(sa.activity_point) activity_sum,
+sb.grade_point+sum(sa.activity_point) as statis_point
+from stu_baseinfo sb
+left join stu_activity sa on sb.stu_code = sa.stu_code
+where sb.stu_code = 100001
+
+
+//活动详情部分
+select 
+sa.id activity_id,
+sa.stu_code,
+sa.activity_name,
+sa.activity_point
+from stu_activity sa
+where sa.stu_code = 100001
+
+
+//修改stu_baseinfo 部分，活动总分部分和统计总分部分为统计数据，无法修改
+update stu_baseinfo 
+set stu_name = '张三',
+class_name = '计算机二班',
+grade_point = 66.8
+where stu_code = 100001
+
+//修改stu_activity 部分
+update stu_activity
+set activity_name = 'new活动',
+activity_point = 7.3
+where _id = 1
+
+delete from stu_activity
+where _id = 29

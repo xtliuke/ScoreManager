@@ -1,0 +1,49 @@
+CREATE TABLE "main"."course" (
+"id"  INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+"course_code"  INTEGER NOT NULL,
+"course_name"  TEXT,
+"course_score"  REAL,
+"stu_code"  INTEGER NOT NULL
+)
+;
+CREATE TABLE "main"."activity" (
+"id"  INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+"stu_code"  INTEGER NOT NULL,
+"activity_name"  TEXT,
+"activity_point"  REAL NOT NULL
+)
+;
+CREATE TABLE "main"."stu_baseinfo" (
+"id"  INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+"stu_code"  INTEGER NOT NULL,
+"stu_name"  TEXT NOT NULL,
+"class_name"  TEXT NOT NULL,
+"grade_point"  REAL
+)
+;
+
+
+//ÐÞ¸Äºó
+CREATE TABLE "stu_course" (
+"_id"  INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+"course_code"  INTEGER NOT NULL,
+"course_name"  TEXT,
+"course_score"  REAL,
+"stu_code"  INTEGER NOT NULL
+)
+;
+CREATE TABLE "stu_activity" (
+"_id"  INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+"stu_code"  INTEGER NOT NULL,
+"activity_name"  TEXT,
+"activity_point"  REAL NOT NULL
+)
+;
+CREATE TABLE "stu_baseinfo" (
+"_id"  INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+"stu_code"  INTEGER NOT NULL,
+"stu_name"  TEXT NOT NULL,
+"class_name"  TEXT NOT NULL,
+"grade_point"  REAL
+)
+;
